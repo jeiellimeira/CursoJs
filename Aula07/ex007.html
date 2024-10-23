@@ -7,22 +7,37 @@
     <style>
         body{
             background: rgb(84, 84, 191);
+            color: white;
+            font: normal 18pt Arial;
         }
     </style>
 </head>
 <body>
     <h1>Iniciando estudos com o DOM</h1>
     <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <Strong>DOM</Strong>em javascript</p>
+    <p>Aprendendo a usar o <Strong>DOM</Strong> em javascript</p>
     <div id="msg">Clique em mim</div>
 </body>
 
 <script>
-    var corpo = window.document.body
-    var p1 = window.document.getElementsByTagName('p')[0]
-    var d = window.document.getElementById('msg')
-    d.style.background = 'green'
-    window.document.getElementById('msg').innerText =  'olá!'
+   window.document.write(window.document.charset)// mostrar charset
+   window.document.write(window.navigator.appName) // nome do app
+   window.document.write(window.document.URL) //url que os arquivos estão
+
+   var corpo  = window.document.body
+   var p1 = window.document.getElementsByTagName('p')[1]
+   var d = window.document.getElementById('msg')
+   corpo.style.background = 'black'
+   p1.style.color = 'yellow'
+   d.style.background = 'green'
+   d.innerText = 'Estou aguardando...'
+
+   document.alert(p1.innerHTML)
+
+   var d = window.document.querySelector('div#msg')
+   d.style.color = 'blue'
+
+
 </script>
 
 </html>
