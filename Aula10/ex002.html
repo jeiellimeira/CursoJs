@@ -21,19 +21,20 @@
 </head>
 <body>
     <h1>Somando valores</h1>
-    <input type="number" name="txtn1" id="txtn1">
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="soma" onclick="somar()">
-    <div id="res">Resultado</div>
+    <input type="number" name="txtn1" id="txtn1"> <!-- input para receber dados do usuario-->
+    <input type="number" name="txtn2" id="txtn2">  <!-- input para receber dados do usuario-->
+    <input type="button" value="soma" onclick="somar()">  <!-- botão para fazer a soma -->
+    <div id="res">Resultado</div>  <!-- Para indicar o local onde vai sair o resultado-->
     
     <script>
         function somar(){
-            var tn1 = window.document.getElementById('txtn1')
+            var tn1 = window.document.getElementById('txtn1')  /* criação da variável usando o DOM pegando a variavél já existente no documento html
+                                                                    conversão de "txtn1" para tn1 */
             var tn2 = window.document.getElementById('txtn2')
             var res = window.document.getElementById('res')
-            var n1 = Number(tn1.value)
+            var n1 = Number(tn1.value) // (tn1.value, para não concatenar)
             var n2 = Number(tn2.value)
-            s = n1 + n2
+            s = n1 + n2 // variavel do resultado que vai ser exibido
 
             res.innerHTML = `A soma entre ${n1} e ${n2} é igual a: ${s}`
 
