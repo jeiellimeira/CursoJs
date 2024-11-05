@@ -1,8 +1,8 @@
-var idade = 16
-if (idade<18){
-    conseole.log('não vota')
-} else{
-   if(idade>= && idade <18){
+var idade = 22
+if (idade < 16){
+    console.log('não vota')
+} else if (idade < 18){
     console.log('voto opcional')
+   } else {
+    console.log('voto obrigatorio')
    }
-}
