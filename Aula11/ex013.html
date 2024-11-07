@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torcedor</title>
+</head>
+<body>
+    <h1>Que tipo de torcedor você é?</h1>
+
+    <picture>
+        <img src="img/torcedor-consumidor.jpg" alt="tor" id="tor">
+    </picture>
+
+    <h2>Qual time você torce?</h2>
+    <p>Digite tudo em minúsculo</p>
+    <select id="time">
+        <option value="cor">Corinthians</option>
+        <option value="pal">Palmeiras</option>
+        <option value="fla">Flamengo</option>
+        <option value="bot">Botafogo</option>
+        <option value="san">Santos</option>
+        <option value="gre">Grêmio</option>
+        <option value="sao">São Paulo</option>
+    </select>
+    <button type="button" onclick="verificar()">Clique</button>
+    <div id="res"></div>
+
+    <script>
+        function verificar(){
+            var time = document.getElementById('time').value; // Captura o valor do select
+            var res = document.getElementById('res'); // Pega o elemento onde a resposta será exibida
+
+            if (time == 'cor') {
+                res.innerHTML = 'Parabéns, seu time é o melhor do mundo, o temido Timão, odiado por muitos e amado por todos! '
+            } else if (time == 'pal') {
+                res.innerHTML = 'Você torce para o Palmeiras, o time verde vomito, cheio de história merda e ladrões'
+            } else if (time == 'fla') {
+                res.innerHTML = 'Você é flamenguista, um dos times do Brasil, com uma torcida terceirizada'
+            } else if (time == 'bot') {
+                res.innerHTML = 'Botafogo, o time de grandes heróis e uma torcida fiel! botão do textor'
+            } else if (time == 'san') {
+                res.innerHTML = 'Santos, o time dos idosos da Vila e do futebol arte!'
+            } else if (time == 'gre') {
+                res.innerHTML = 'Você é gremista, com uma torcida vibrante e cheia de viado';
+            } else if (time == 'sao') {
+                res.innerHTML = 'São Paulo, um dos maiores times do Brasil, com uma história gay de bicholas!';
+            } else {
+                res.innerHTML = 'Selecione um time válido!';
+            }
+        }
+    </script>
+</body>
+</html>
