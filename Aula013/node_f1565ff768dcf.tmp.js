@@ -10,7 +10,7 @@ console.log('tudo bem')
 */
 
 var c = 1
-while(c <=10){
-    console.log( `oi ${c}`)
+while(c <=100000000000){
+    console.log(`${c}`)
     c++
 }
