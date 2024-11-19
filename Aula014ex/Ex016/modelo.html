@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Verificador de idade </h1>
+    </header>
+
+    <section>
+<div>
+    <p>
+        <label for="inicio">inicio:</label>
+        <input type="number" id="inicio" min="0" name="inicio">
+    </p>
+
+    <p>
+        <label for="fim">fim:</label>
+        <input type="number" id="fim" min="0" name="fim">
+    </p>
+
+    <p>
+        <label for="passo">passo:</label>
+        <input type="number" id="passo" min="0" name="passo">
+    </p>
+   
+    <p>
+        <input type="button" value="iniciar" onclick="iniciar()">
+    </p>
+</div>
+
+<div id="res">
+   contando:
+</div>
+
+    </section>
+
+    <footer>
+        <p>&copy; CursoemVideo </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
