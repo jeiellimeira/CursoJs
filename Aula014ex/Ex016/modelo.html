@@ -3,46 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contador</title>
     <link rel="stylesheet" href="style.css">
+    <title>Super contador</title>
 </head>
 <body>
     <header>
-        <h1> Verificador de idade </h1>
+        <h1>Vamos contar</h1>
     </header>
 
     <section>
-<div>
-    <p>
-        <label for="inicio">inicio:</label>
-        <input type="number" id="inicio" min="0" name="inicio">
-    </p>
+        <div id="dados">
+            <p>inicio: <input type="number" name="inicio" id="txti"></p>
+            <p>fim: <input type="number" name="fim" id="txtf"></p>
+            <p>passo: <input type="number" name="passo" id="txtp"></p>
+            <p><input type="button" value="contar" onclick="contar()"></p>
+        </div>
 
-    <p>
-        <label for="fim">fim:</label>
-        <input type="number" id="fim" min="0" name="fim">
-    </p>
-
-    <p>
-        <label for="passo">passo:</label>
-        <input type="number" id="passo" min="0" name="passo">
-    </p>
-   
-    <p>
-        <input type="button" value="iniciar" onclick="iniciar()">
-    </p>
-</div>
-
-<div id="res">
-   contando:
-</div>
-
+        <div id="res">
+            preparando a contagem...
+        </div>
     </section>
 
     <footer>
-        <p>&copy; CursoemVideo </p>
+        <p> &copy; Curso em video </p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
